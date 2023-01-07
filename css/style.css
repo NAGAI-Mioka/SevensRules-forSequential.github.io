@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
     color: rgb(40, 40, 40);
     vertical-align: top;
     box-sizing: border-box;
 }
 
 html, body {
+    margin: 0;
+    padding: 0;
     width: 100vw;
     height: 100vh;
 }
@@ -63,6 +63,18 @@ iframe#viewer {
     border: 1px solid salmon;
 }
 
+body#content {
+    padding: 1em 1.5em;
+    height: fit-content;
+    min-height: 100%;
+}
+
+/*サイドメニュー*/
+div#menu * {
+    margin: 0;
+    padding: 0;
+} 
+
 /*要素の単なるデザイン*/
 div {
     /*デバッグ用*/
@@ -70,8 +82,9 @@ div {
 }
 
 h1 {
-    line-height: 8vmin;
-    font-size: 7vmin;
+    line-height: 10vmin;
+    font-size: 8vmin;
+    border-bottom: 3px solid black;
 }
 
 p {

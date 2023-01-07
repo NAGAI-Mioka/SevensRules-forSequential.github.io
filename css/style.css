@@ -73,7 +73,25 @@ body#content {
 div#menu * {
     margin: 0;
     padding: 0;
-} 
+}
+
+div#menu > ul {
+    padding: 0 1em;
+    background-color: lightcoral;
+}
+
+div#menu li {
+    width: 100%;
+    list-style-type: none;
+    display: block;
+}
+
+div#menu a {
+    height: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
 
 /*要素の単なるデザイン*/
 div {

@@ -22,17 +22,20 @@ div#full_contaner {
 }
 
 div#header {
-    height: 1em;
+    flex-basis: 50px;
+    height: 50px;
 }
 
 div#body {
     display: flex;
     flex-direction: row;
+    flex-basis: auto;
     flex-grow: 1;
 }
 
 div#sideBar {
-    width: 10em;
+    flex-basis: 100px;
+    /*width: 10em;*/
 }
 
 div#menu {
@@ -41,6 +44,7 @@ div#menu {
 }
 
 div#content {
+    flex-basis: auto;
     flex-grow: 1;
 }
 
@@ -56,8 +60,8 @@ div {
 }
 
 h1 {
-    line-height: 10vmin;
-    font-size: 8vmin;
+    line-height: 8vmin;
+    font-size: 7vmin;
 }
 
 p {

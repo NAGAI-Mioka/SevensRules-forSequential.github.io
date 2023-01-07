@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(40, 40, 40);
+    box-sizing: border-box;
+}
+
+/*画面全体の分割*/
+div#full_contaner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+div#header {
+    height: 1em;
+}
+
+div#body {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+div#sideBar {
+    width: 10em;
+}
+
+div#menu {
+
+}
+
+div#content {
+    flex-grow: 1;
+}
+
+/*要素の単なるデザイン*/
+div {
+    /*デバッグ用*/
+    border: 1px solid black;
+}

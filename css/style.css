@@ -340,7 +340,14 @@ div.lil_column p {
 }
 
 ol li {
+    padding: 1em 0;
     border-bottom: 4px dashed lightcoral;
+}
+
+ol li::marker {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: lightcoral;
 }
 
 h1#title {

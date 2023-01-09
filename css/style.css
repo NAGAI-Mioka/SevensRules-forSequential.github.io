@@ -194,101 +194,7 @@ h4.visited {
     color: blueviolet;
 }
 
-/*要素の単なるデザイン*/
-h1 {
-    margin-block-start: 0em;
-    line-height: 10vmin;
-    font-size: 8vmin;
-    border-bottom: 3px solid rgb(40, 40, 40);
-}
-
-p,
-dd,
-li,
-figcaption {
-    font-size: 3vmin;
-}
-
-h3 {
-    font-size: 5vmin;
-    line-height: 7vmin;
-    border-bottom: 3px dashed lightcoral;
-    margin-block: 0.5em;
-}
-
-h4 {
-    margin: 0;
-    font-size: 4vmin;
-}
-
-dl {
-    margin: 0 0 1em 0;
-    padding: 0 1.5em 0 0.5em;
-    border-left: 5px solid lightcoral;
-}
-
-dt {
-    font-size: 4vmin;
-    font-weight: bold;
-}
-
-strong {
-    color: rgb(15, 15, 15);
-    background: linear-gradient(transparent 65%, rgba(240, 128, 128, 0.4) 0%);
-}
-
-span.red {
-    color: crimson;
-}
-
-a {
-    color: royalblue;
-    transition: 200ms;
-}
-
-a:visited {
-    color: darkorchid;
-}
-
-div.column {
-    border: 2px solid lightcoral;
-    border-radius: 20px;
-    padding: 0em 1em 1em 1em;
-    margin: 1.5em 0 2em 0;
-}
-
-div.column p {
-    margin-inline-start: 1.5em;
-}
-
-h1#title {
-    display: inline-block;
-    margin: 0;
-    white-space: nowrap;
-    font-size: xx-large;
-    line-height: 73px;
-    width: auto;
-    border: none;
-}
-
-button.back {
-    display: inline-block;
-    white-space: nowrap;
-    margin-left: 10px;
-    padding: 4px 30px;
-    border: 3px solid rgb(40, 40, 40);
-    border-radius: 100vh;
-    background-color: white;
-    font-size: large;
-    font-weight: bold;
-    transition: 200ms;
-}
-
-button.back:hover {
-    color: white;
-    background-color: rgb(40, 40, 40);
-}
-
+/*ページネーション*/
 nav.prev_next {
     display: flex;
     justify-content: space-between;
@@ -343,4 +249,122 @@ nav.prev_next a.next::after {
 
 nav.prev_next a:hover::after {
     border-color: white;
+}
+
+/*要素の単なるデザイン*/
+h1 {
+    margin-block-start: 0em;
+    line-height: 10vmin;
+    font-size: 8vmin;
+    border-bottom: 3px solid rgb(40, 40, 40);
+}
+
+p,
+dd,
+li,
+figcaption {
+    font-size: 3vmin;
+}
+
+h3 {
+    font-size: 5vmin;
+    line-height: 7vmin;
+    border-bottom: 3px dashed lightcoral;
+    margin-block: 0.5em;
+}
+
+h4 {
+    margin: 0;
+    font-size: 4vmin;
+}
+
+dl {
+    margin: 0 0 1em 0;
+    padding: 0 1.5em 0 0.5em;
+    border-left: 5px solid lightcoral;
+}
+
+dt {
+    font-size: 4vmin;
+    font-weight: bold;
+}
+
+strong {
+    color: rgb(15, 15, 15);
+    background: linear-gradient(transparent 65%, rgba(240, 128, 128, 0.4) 0%);
+}
+
+span.red {
+    color: crimson;
+}
+
+div.column {
+    border: 2px solid lightcoral;
+    border-radius: 20px;
+    padding: 0em 1em 1em 1em;
+    margin: 1.5em 0 2em 0;
+}
+
+div.column p {
+    margin-inline-start: 1.5em;
+}
+
+h1#title {
+    display: inline-block;
+    margin: 0;
+    white-space: nowrap;
+    font-size: xx-large;
+    line-height: 73px;
+    width: auto;
+    border: none;
+}
+
+button.back {
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 10px;
+    padding: 4px 30px;
+    border: 3px solid rgb(40, 40, 40);
+    border-radius: 100vh;
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+    transition: 200ms;
+}
+
+button.back:hover {
+    color: white;
+    background-color: rgb(40, 40, 40);
+}
+
+div.imgfig {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+div.imgfig img {
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+}
+
+figure {
+    display: inline-flex;
+    flex-flow: column;
+    text-align: center;
+    max-width: 100%;
+    width: fit-content;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+figcaption {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }

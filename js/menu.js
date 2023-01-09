@@ -3,19 +3,14 @@ $(document).ready(function () {
     $(".button_back").on("click", function () {
         history.back();
     });
-});
 
-
-$(window).on("load", function () {
+    // ページ更新でクッキー全削除
     console.log("delete!");
     const cks = document.cookie.split(';')
     for (let i = 0; i < cks.length; i++) {
         const ck = cks[i].trim();
-        //const eqPos = cookie.indexOf('=')
-        //const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie
         const content = ck.split('=');
         console.log(content[0]);
         Cookies.remove(content[0]);
-        //document.cookie = cookie + '; max-age=0';
     }
 });

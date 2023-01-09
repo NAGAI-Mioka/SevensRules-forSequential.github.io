@@ -269,7 +269,6 @@ figcaption {
 h3 {
     font-size: 5vmin;
     line-height: 7vmin;
-    border-bottom: 3px dashed lightcoral;
     margin-block: 0.5em;
 }
 
@@ -302,11 +301,37 @@ span.red {
     color: crimson;
 }
 
+span.keyword {
+    padding-inline: 0.1em;
+    font-weight: bold;
+    color: royalblue;
+    background: linear-gradient(transparent 65%, rgb(100, 149, 237, 0.5) 0%);
+}
+
 div.column {
-    border: 2px solid lightcoral;
+    border: 3px solid cornflowerblue;
     border-radius: 20px;
+    background-color: azure;
     padding: 0em 1em 1em 1em;
     margin: 1.5em 0 2em 0;
+}
+
+div.column h3 {
+    font-size: 5vmin;
+    line-height: 7vmin;
+    border-bottom: 3px dashed cornflowerblue;
+}
+
+div.lil_column {
+    border: 2px dotted lightcoral;
+    border-radius: 20px;
+    background-color: snow;
+    padding: 0em 1em 1em 1em;
+    margin: 1.5em 0 2em 0;
+}
+
+div.lil_column h3 {
+    border-bottom: 3px dotted lightcoral;
 }
 
 div.column p {

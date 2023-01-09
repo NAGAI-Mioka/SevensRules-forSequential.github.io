@@ -26,9 +26,13 @@ div#full_contaner > div {
 }
 
 div#header {
+    display: flex;
+    align-items: center;
+    width: 100%;
     height: 75px;
     flex-shrink: 0;
     border-bottom: 2px solid lightgray;
+    overflow: hidden;
 }
 
 div#body {
@@ -124,6 +128,7 @@ div#menu li.column::marker {
 div#menu a {
     font-weight: bold;
     transition: 200ms;
+    color: rgb(40, 40, 40);
 }
 
 div#menu li.topic > a {
@@ -176,8 +181,33 @@ h1 {
     font-size: 8vmin;
 }
 
-p {
+p,
+dd,
+li,
+figcaption {
     font-size: 3vmin;
+}
+
+h3 {
+    font-size: 5vmin;
+}
+
+strong {
+    color: rgb(15, 15, 15);
+    background: linear-gradient(transparent 65%, rgba(240, 128, 128, 0.4) 0%);
+}
+
+span.red {
+    color: crimson;
+}
+
+a {
+    color: royalblue;
+    transition: 200ms;
+}
+
+a:visited {
+    color: darkorchid;
 }
 
 h1#title {

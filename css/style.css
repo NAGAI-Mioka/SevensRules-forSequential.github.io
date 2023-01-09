@@ -50,7 +50,7 @@ div#menu {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: lightcoral;
+    background-color: mistyrose;
 }
 
 div#content {
@@ -77,15 +77,15 @@ div#menu * {
 }
 
 div#menu ul {
-    padding-left: 1em;
-}
-
-div#menu > ul {
     padding-left: 1.5em;
 }
 
+div#menu > ul {
+    padding-left: 1em;
+}
+
 div#menu ul.part {
-    padding-left: 0;
+    padding-left: 0.5em;
 }
 
 div#menu li.topic {
@@ -95,20 +95,16 @@ div#menu li.topic {
 
 div#menu li.part {
     padding-top: 0.5em;
-    font-weight: bold;
-    text-decoration: 1px double rgb(40, 40, 40);
     list-style-type: none;
 }
 
 div#menu li.procedure {
     padding-top: 0.5em;
-    text-decoration: initial;
     list-style-type: decimal;
 }
 
 div#menu li.column {
     padding-top: 0;
-    text-decoration: initial;
     list-style-type: "- ";
 }
 
@@ -120,12 +116,18 @@ div#menu li.column::marker {
 
 div#menu a {
     font-weight: bold;
-    text-decoration: none;
     transition: 200ms;
 }
 
 div#menu li.topic > a {
     font-size: large;
+}
+
+div#menu li.part > span {
+    font-size: medium;
+    font-weight: bold;
+    color: darkred;
+    text-decoration: 1px double rgb(40, 40, 40);
 }
 
 div#menu li.column > a {
@@ -135,7 +137,7 @@ div#menu li.column > a {
 }
 
 div#menu a:hover {
-    text-decoration: underline;
+    opacity: 0.7;
 }
 
 /*要素の単なるデザイン*/

@@ -132,13 +132,17 @@ div#menu a {
 }
 
 div#menu li.topic > a {
-    font-size: larger;
+    font-size: large;
 }
 
 div#menu li.part > span {
     font-size: medium;
     font-weight: bold;
     color: darkred;
+}
+
+div#menu li.procedure > a {
+    font-size: medium;
 }
 
 div#menu li.column > a {

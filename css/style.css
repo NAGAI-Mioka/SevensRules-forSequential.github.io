@@ -50,6 +50,7 @@ div#menu {
     width: 100%;
     height: 100%;
     overflow: auto;
+    background-color: lightcoral;
 }
 
 div#content {
@@ -75,14 +76,13 @@ div#menu * {
     padding: 0;
 }
 
-div#menu > ul {
-    padding: 0 1em;
-    background-color: lightcoral;
+div#menu ul, div#menu ol {
+    padding-left: 1em;
+    
 }
 
 div#menu li {
     width: 100%;
-    display: block;
 }
 
 div#menu ol > li {
@@ -90,7 +90,7 @@ div#menu ol > li {
 }
 
 div#menu ul > li {
-    list-style-type: "-";
+    list-style-type: "- ";
 }
 
 div#menu a {

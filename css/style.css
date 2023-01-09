@@ -350,6 +350,10 @@ ol li::marker {
     color: lightcoral;
 }
 
+ul li {
+    border: none;
+}
+
 h1#title {
     display: inline-block;
     margin: 0;

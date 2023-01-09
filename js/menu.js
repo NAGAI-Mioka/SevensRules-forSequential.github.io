@@ -1,4 +1,4 @@
-$(document).on("load", function () {
+$(window).on("load", function () {
     console.log("delete!");
     const cookies = document.cookie.split(';')
     for (let i = 0; i < cookies.length; i++) {

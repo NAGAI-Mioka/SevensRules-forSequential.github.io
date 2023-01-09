@@ -140,6 +140,12 @@ div#menu a {
     color: rgb(40, 40, 40);
 }
 
+div#menu a.now_open {
+    pointer-events: none;
+    background-color: darkred;
+    color: white;
+}
+
 div#menu li.topic > a {
     font-size: 14pt;
 }

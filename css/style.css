@@ -41,7 +41,7 @@ div#body > div {
 }
 
 div#sideBar {
-    width: 12em;
+    width: 15em;
     height: 100%;
     flex-shrink: 0;
 }
@@ -76,28 +76,39 @@ div#menu * {
     padding: 0;
 }
 
-div#menu ul, div#menu ol {
+div#menu ul {
     padding-left: 1em;
     
 }
 
-div#menu li {
-    width: 100%;
+div#menu > ul {
+    padding-left: 2em;
 }
 
-div#menu ol > li {
+div#menu li.topic {
+    line-height: 3em;
+    list-style-type: none;
+}
+
+div#menu li.part {
+    line-height: 2em;
+    list-style-type: upper-roman;
+}
+
+div#menu li.procedure {
+    line-height: 3em;
     list-style-type: decimal;
 }
 
-div#menu ul > li {
+div#menu li.column {
+    line-height: 1.5em;
     list-style-type: "- ";
 }
 
 div#menu a {
-    height: 100%;
+    line-height: 2em;
     font-weight: bold;
     text-decoration: none;
-    display: block;
 }
 
 /*要素の単なるデザイン*/

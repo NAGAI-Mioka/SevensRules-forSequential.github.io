@@ -313,7 +313,7 @@ div.column {
     border-radius: 20px;
     background-color: azure;
     padding: 0em 1em 1em 1em;
-    margin: 1.5em 0 2em 0;
+    margin: 1.5em 0 2em 2em;
 }
 
 div.column h3 {
@@ -327,15 +327,21 @@ div.lil_column {
     border-radius: 20px;
     background-color: snow;
     padding: 0em 1em 1em 1em;
-    margin: 1.5em 0 2em 0;
+    margin: 1.5em 0 2em 2em;
 }
 
 div.lil_column h3 {
     border-bottom: 3px dotted lightcoral;
 }
 
-div.column p {
+div.column p,
+div.lil_column p {
     margin-inline-start: 1.5em;
+}
+
+div.hr {
+    margin-top: 1em;
+    border-bottom: 4px dashed lightcoral;
 }
 
 h1#title {

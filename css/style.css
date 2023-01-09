@@ -146,11 +146,34 @@ div#menu a:hover {
     opacity: 0.6;
 }
 
+/*既読ページのデザインを変更する*/
+body.unvisited {
+    background-color: white;
+}
+
+h1.unvisited {
+    border-bottom: 3px solid rgb(40, 40, 40);
+}
+
+body.visited {
+    /*background-color: cornsilk;*/
+    background-color: ivory;
+}
+
+h1.visited {
+    color: blueviolet;
+    border-bottom: 3px solid blueviolet;
+    padding-left: 12vmin;
+    background-image: url("https://nagai-mioka.github.io/SevensRules-forSequential.github.io/img/icon_visited.svg");
+    background-repeat: no-repeat;
+    background-size: 10vmin;
+    background-position: left center;
+}
+
 /*要素の単なるデザイン*/
 h1 {
     line-height: 10vmin;
     font-size: 8vmin;
-    border-bottom: 3px solid black;
 }
 
 p {

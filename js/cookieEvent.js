@@ -13,7 +13,7 @@ $(window).on("load", function () {
 });
 
 // iframe_mainの表示から外れたとき
-$(window).on("beforeunload", function () {
+$(window).on("unload", function () {
     if (window.parent === window.top) {
         if (Cookies.get("visited-" + window.location.pathname) == null) {
             console.log("unload!");

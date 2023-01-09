@@ -142,8 +142,7 @@ div#menu a {
     transition-property: opacity;
 }
 
-div#menu a.now_open,
-div#menu li.column > a.now_open {
+div#menu a.now_open {
     pointer-events: none;
     text-decoration: none;
     color: white;
@@ -168,6 +167,7 @@ div#menu li.column > a {
     font-size: 11pt;
     font-weight: normal;
     color: dimgray;
+    background: none;
 }
 
 div#menu a:hover {

@@ -146,7 +146,7 @@ div#menu a.now_open {
     pointer-events: none;
     text-decoration: none;
     color: white;
-    background: lightcoral;
+    background: cornflowerblue;
 }
 
 div#menu li.topic > a {
@@ -232,6 +232,17 @@ a {
 
 a:visited {
     color: darkorchid;
+}
+
+div.column {
+    border: 2px solid lightcoral;
+    border-radius: 20px;
+    padding: 0em 1em 1em 1em;
+    margin: 1.5em 0 2em 0;
+}
+
+div.column p {
+    margin-inline-start: 1.5em;
 }
 
 h1#title {

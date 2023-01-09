@@ -2,9 +2,12 @@
 
 // 描画されたとき
 $(window).on("load", function () {
+    console.log("load!");
     if (Cookies.get("visited-" + window.location.pathname) != null) {
+        console.log("visit!");
         $("body, h1").removeClass("unvisited").addClass("visited");
     } else {
+        console.log("unvisit!");
         $("body, h1").removeClass("visited").addClass("unvisited");
     }
 });
@@ -12,6 +15,7 @@ $(window).on("load", function () {
 // iframe_mainの表示から外れたとき
 $(window).on("unload", function () {
     if (Cookies.get("visited-" + window.location.pathname) == null) {
+        console.log("unload!");
         Cookies.set("visited-" + window.location.pathname, "true");
     }
 });

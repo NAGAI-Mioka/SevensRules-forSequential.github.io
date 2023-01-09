@@ -136,14 +136,14 @@ div#menu li.procedure::marker {
 
 div#menu a {
     font-weight: bold;
-    transition: 200ms;
     color: rgb(40, 40, 40);
+    transition: 200ms;
+    transition-property: opacity;
 }
 
 div#menu a.now_open {
     pointer-events: none;
-    background-color: darkred;
-    color: white;
+    background: linear-gradient(transparent 65%, rgba(240, 128, 128, 0.4) 0%);
 }
 
 div#menu li.topic > a {

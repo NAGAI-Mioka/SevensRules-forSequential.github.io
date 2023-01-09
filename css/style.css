@@ -11,6 +11,7 @@ html, body {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    background-color: white;
 }
 
 /*画面全体の分割*/
@@ -175,16 +176,7 @@ div#menu a:hover {
 }
 
 /*既読ページのデザインを変更する*/
-body.unvisited {
-    background-color: white;
-}
-
-h1.unvisited {
-    border-bottom: 3px solid rgb(40, 40, 40);
-}
-
 body.visited {
-    /*background-color: cornsilk;*/
     background-color: ivory;
 }
 
@@ -198,11 +190,16 @@ h1.visited {
     background-position: left center;
 }
 
+h4.visited {
+    color: blueviolet;
+}
+
 /*要素の単なるデザイン*/
 h1 {
     margin-block-start: 0.2em;
     line-height: 10vmin;
     font-size: 8vmin;
+    border-bottom: 3px solid rgb(40, 40, 40);
 }
 
 p,
@@ -214,6 +211,22 @@ figcaption {
 
 h3 {
     font-size: 5vmin;
+}
+
+h4 {
+    margin: 0;
+    font-size: 4vmin;
+}
+
+dl {
+    margin: 0 0 1em 0;
+    padding: 0 1.5em 0 0.5em;
+    border-left: 5px solid lightcoral;
+}
+
+dt {
+    font-size: 4vmin;
+    font-weight: bold;
 }
 
 strong {
@@ -252,6 +265,7 @@ h1#title {
     font-size: xx-large;
     line-height: 73px;
     width: auto;
+    border: none;
 }
 
 button.back {

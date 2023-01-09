@@ -4,9 +4,9 @@
 $(window).on("load", function () {
     var path = window.location.pathname.replace(/\//g, "-");
     if (Cookies.get("visited-" + path) === "true") {
-        $("body, h1").removeClass("unvisited").addClass("visited");
+        $("body, h1, h4").addClass("visited");
     } else {
-        $("body, h1").removeClass("visited").addClass("unvisited");
+        $("body, h1, h4").removeClass("visited");
     }
 });
 

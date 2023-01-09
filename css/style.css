@@ -198,6 +198,7 @@ h1.visited {
 
 /*要素の単なるデザイン*/
 h1 {
+    margin-block-start: 0;
     line-height: 10vmin;
     font-size: 8vmin;
 }
@@ -233,6 +234,7 @@ a:visited {
 
 h1#title {
     display: inline-block;
+    margin: 0;
     white-space: nowrap;
     font-size: xx-large;
     line-height: 73px;

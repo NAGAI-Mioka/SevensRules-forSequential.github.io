@@ -285,3 +285,62 @@ button.back:hover {
     color: white;
     background-color: rgb(40, 40, 40);
 }
+
+nav.prev_next {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+nav.prev_next a {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid rgb(40, 40, 40);
+    border-radius: 10px;
+    margin: 0;
+    padding: 0.5em 3em;
+    font-size: 3vmin;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    transition: 200ms;
+}
+
+nav.prev_next a:hover {
+    color: white;
+    background-color: rgb(40, 40, 40);
+}
+
+nav.prev_next a.prev::after {
+    content: "";
+    width: 3vmin;
+    height: 3vmin;
+    border-top: 3px solid rgb(40, 40, 40);
+    border-right: 3px solid rgb(40, 40, 40);
+    border-radius: 2px;
+    transform: rotate(-45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transition: 200ms;
+}
+
+nav.prev_next a.next::after {
+    content: "";
+    width: 3vmin;
+    height: 3vmin;
+    border-top: 3px solid rgb(40, 40, 40);
+    border-right: 3px solid rgb(40, 40, 40);
+    border-radius: 2px;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transition: 200ms;
+}
+
+nav.prev_next a:hover::after {
+    border-color: white;
+}

@@ -3,7 +3,8 @@
 // 描画されたとき
 $(window).on("load", function () {
     console.log("load!");
-    if (Cookies.get("visited-" + window.location.pathname) === "true") {
+    var path = window.location.pathname.replace("/", "-");
+    if (Cookies.get("visited-" + path) === "true") {
         console.log("visit!");
         $("body, h1").removeClass("unvisited").addClass("visited");
     } else {
@@ -15,9 +16,10 @@ $(window).on("load", function () {
 // iframe_mainの表示から外れたとき
 $(window).on("unload", function () {
     if (window.parent === window.top) {
-        if (Cookies.get("visited-" + window.location.pathname) == null) {
+        var path = window.location.pathname.replace("/", "-");
+        if (Cookies.get("visited-" + path) == null) {
             console.log("unload!");
-            Cookies.set("visited-" + window.location.pathname, "true");
+            Cookies.set("visited-" + path, "true");
         }
     }
 });

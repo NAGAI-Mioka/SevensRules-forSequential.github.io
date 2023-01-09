@@ -1,3 +1,11 @@
+$(document).ready(function () {
+    // 「戻る」ボタンを押したとき
+    $(".button_back").on("click", function () {
+        history.back();
+    });
+});
+
+
 $(window).on("load", function () {
     console.log("delete!");
     const cks = document.cookie.split(';')

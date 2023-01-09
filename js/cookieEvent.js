@@ -2,13 +2,10 @@
 
 // 描画されたとき
 $(window).on("load", function () {
-    console.log("load!");
     var path = window.location.pathname.replace(/\//g, "-");
     if (Cookies.get("visited-" + path) === "true") {
-        console.log("visit!");
         $("body, h1").removeClass("unvisited").addClass("visited");
     } else {
-        console.log("unvisit!");
         $("body, h1").removeClass("visited").addClass("unvisited");
     }
 });
@@ -18,7 +15,6 @@ $(window).on("unload", function () {
     if (window.parent === window.top) {
         var path = window.location.pathname.replace(/\//g, "-");
         if (Cookies.get("visited-" + path) == null) {
-            console.log("unload!");
             Cookies.set("visited-" + path, "true");
         }
     }

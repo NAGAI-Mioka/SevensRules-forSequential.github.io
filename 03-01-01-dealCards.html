@@ -20,82 +20,85 @@
 <body id="content">
     <h4>準備パート&gt;&gt;</h4>
     <h1>1. カードを配る</h1>
-    <p>最初に、プレイヤーの中から親を1人決めます。</p>
-    <div class="hr"></div>
-    <p>親は全ての<span class="keyword">カード</span>をシャッフルし、各プレイヤーに<strong>裏向き</strong>で<strong>均等に</strong>配ります。</p>
-    <p>同じ枚数ずつに分けられない場合は、各プレイヤーの枚数差が±1枚に収まるように分配します。</p>
-    <div id="cards" class="column">
-        <h3>カード</h3>
-        <div class="imgfig">
-            <figure style="max-width: calc(50% - 3px);">
-                <img src="https://placehold.jp/150x150.png">
-                <figcaption>表面</figcaption>
-            </figure>
-            <figure style="max-width: calc(50% - 3px);">
-                <img src="https://placehold.jp/150x150.png">
-                <figcaption>裏面</figcaption>
-            </figure>
-            <p>例&#65306; 「スペードの2」のカード</p>
-        </div>
-        <p>カードは<strong>全部で52枚</strong>あります。</p>
-        <p><span class="keyword">スート</span>と<span class="keyword">数字</span>の各組み合わせは<strong>1枚ずつしかありません</strong>。</p>
-        <div id="suit" class="column">
-            <h3>スート</h3>
-            <p>カードの表面に描かれたマークを「<strong>スート</strong>」と呼びます。</p>
-            <p>スートには以下の<strong><span class="red">4種類</span></strong>があります。</p>
-            <div class="imgfig">
-                <div class="imgfig" style="width: auto; display: inline-block;">
+    <ol>
+        <li>最初に、プレイヤーの中から親を1人決めます。</li>
+        <li>親は全ての<span class="keyword">カード</span>をシャッフルし、各プレイヤーに<strong>裏向き</strong>で<strong>均等に</strong>配ります。<br>
+            同じ枚数ずつに分けられない場合は、各プレイヤーの枚数差が±1枚に収まるように分配します。
+            <div id="cards" class="column">
+                <h3>カード</h3>
+                <div class="imgfig">
                     <figure style="max-width: calc(50% - 3px);">
                         <img src="https://placehold.jp/150x150.png">
-                        <figcaption>スペード</figcaption>
+                        <figcaption>表面</figcaption>
                     </figure>
                     <figure style="max-width: calc(50% - 3px);">
                         <img src="https://placehold.jp/150x150.png">
-                        <figcaption>ハート</figcaption>
+                        <figcaption>裏面</figcaption>
                     </figure>
+                    <p>例&#65306; 「スペードの2」のカード</p>
                 </div>
-                <div class="imgfig" style="width: auto; display: inline-block;">
-                    <figure style="max-width: calc(50% - 3px);">
+                <p>カードは<strong>全部で52枚</strong>あります。</p>
+                <p><span class="keyword">スート</span>と<span class="keyword">数字</span>の各組み合わせは<strong>1枚ずつしかありません</strong>。
+                </p>
+                <div id="suit" class="column">
+                    <h3>スート</h3>
+                    <p>カードの表面に描かれたマークを「<strong>スート</strong>」と呼びます。</p>
+                    <p>スートには以下の<strong><span class="red">4種類</span></strong>があります。</p>
+                    <div class="imgfig">
+                        <div class="imgfig" style="width: auto; display: inline-block;">
+                            <figure style="max-width: calc(50% - 3px);">
+                                <img src="https://placehold.jp/150x150.png">
+                                <figcaption>スペード</figcaption>
+                            </figure>
+                            <figure style="max-width: calc(50% - 3px);">
+                                <img src="https://placehold.jp/150x150.png">
+                                <figcaption>ハート</figcaption>
+                            </figure>
+                        </div>
+                        <div class="imgfig" style="width: auto; display: inline-block;">
+                            <figure style="max-width: calc(50% - 3px);">
+                                <img src="https://placehold.jp/150x150.png">
+                                <figcaption>ダイヤ</figcaption>
+                            </figure>
+                            <figure style="max-width: calc(50% - 3px);">
+                                <img src="https://placehold.jp/150x150.png">
+                                <figcaption>クラブ</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div id="number" class="column">
+                    <h3>数字</h3>
+                    <p>カードの表面には<strong><span class="red">1~13</span>の数字</strong>が書かれています。</p>
+                    <p>なお、一部の数字はアルファベットで表されています（A=1, J=11, Q=12, K=13）。</p>
+                    <div class="imgfig">
                         <img src="https://placehold.jp/150x150.png">
-                        <figcaption>ダイヤ</figcaption>
-                    </figure>
-                    <figure style="max-width: calc(50% - 3px);">
-                        <img src="https://placehold.jp/150x150.png">
-                        <figcaption>クラブ</figcaption>
-                    </figure>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="number" class="column">
-            <h3>数字</h3>
-            <p>カードの表面には<strong><span class="red">1~13</span>の数字</strong>が書かれています。</p>
-            <p>なお、一部の数字はアルファベットで表されています（A=1, J=11, Q=12, K=13）。</p>
-            <div class="imgfig">
-                <img src="https://placehold.jp/150x150.png">
+        </li>
+        <li>このとき配られたカードが、各プレイヤーの<span class="keyword">手札</span>となります。
+            <div id="hands" class="column">
+                <h3>手札</h3>
+                <p>手札は、<strong>所持しているプレイヤーにのみ公開されるカード</strong>です。</p>
+                <div class="lil_column">
+                    <h3>禁止事項</h3>
+                    <ul>
+                        <li>他プレイヤーの手札の内容を<strong>知ろうとしてはいけません</strong>。<br>（手札を覗き見る、内容を聞き出そうとするなど）</li>
+                        <li>自分の手札の内容を他プレイヤーに<strong>教えてはいけません</strong>。<br>（手札を見せる、内容について話すなど）</li>
+                    </ul>
+                </div>
+                <div class="lil_column">
+                    <h3>手札の持ち方</h3>
+                    <p>通常、カードの表面が自分にだけ見えるようにして、扇状に広げて持ちます。</p>
+                    <p><strong>カードの表面が他プレイヤーから見えない持ち方</strong>であれば、どのように持っても構いません。</p>
+                    <div class="imgfig">
+                        <img src="https://placehold.jp/150x150.png">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="hr"></div>
-    <p><strong>このとき配られたカードが、各プレイヤーの<span class="keyword">手札</span>となります。</strong></p>
-    <div id="hands" class="column">
-        <h3>手札</h3>
-        <p>手札は、<strong>所持しているプレイヤーにのみ公開されるカード</strong>です。</p>
-        <div class="lil_column">
-            <h3>禁止事項</h3>
-            <ul>
-                <li>他プレイヤーの手札の内容を<strong>知ろうとしてはいけません</strong>。<br>（手札を覗き見る、内容を聞き出そうとするなど）</li>
-                <li>自分の手札の内容を他プレイヤーに<strong>教えてはいけません</strong>。<br>（手札を見せる、内容について話すなど）</li>
-            </ul>
-        </div>
-        <div class="lil_column">
-            <h3>手札の持ち方</h3>
-            <p>通常、カードの表面が自分にだけ見えるようにして、扇状に広げて持ちます。</p>
-            <p><strong>カードの表面が他プレイヤーから見えない持ち方</strong>であれば、どのように持っても構いません。</p>
-            <div class="imgfig">
-                <img src="https://placehold.jp/150x150.png">
-            </div>
-        </div>
-    </div>
+        </li>
+    </ol>
     <nav class="prev_next">
         <a class="prev" href="https://nagai-mioka.github.io/SevensRules-forSequential.github.io/03-procedure">前のページ</a>
         <a class="next"

@@ -339,8 +339,7 @@ div.lil_column p {
     margin-inline-start: 1.5em;
 }
 
-div.hr {
-    margin-top: 1em;
+ol li {
     border-bottom: 4px dashed lightcoral;
 }
 

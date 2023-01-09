@@ -1,7 +1,7 @@
 $(window).on("load", function () {
     console.log("delete!");
     const cks = document.cookie.split(';')
-    for (let i = 0; i < cookies.length; i++) {
+    for (let i = 0; i < cks.length; i++) {
         const ck = cks[i].trim();
         //const eqPos = cookie.indexOf('=')
         //const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie

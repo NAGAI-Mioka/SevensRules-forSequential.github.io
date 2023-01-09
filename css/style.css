@@ -336,7 +336,9 @@ div.lil_column h3 {
 }
 
 div.column p,
-div.lil_column p {
+div.lil_column p
+div.column dl,
+div.lil_column dl {
     margin-inline-start: 1.5em;
 }
 
@@ -352,6 +354,7 @@ ol li::marker {
 }
 
 ul li {
+    list-style-type: disc;
     border: none;
 }
 

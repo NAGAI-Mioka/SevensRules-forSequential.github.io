@@ -95,6 +95,10 @@ div#menu ul.part {
     padding-left: 8px;
 }
 
+div#menu li {
+    font-size: medium;
+}
+
 div#menu li.topic {
     padding: 8px 0;
     list-style-type: none;

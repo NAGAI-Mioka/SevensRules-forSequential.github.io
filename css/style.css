@@ -124,9 +124,14 @@ div#menu li.column {
 }
 
 div#menu li.column::marker {
-    font-size: small;
+    font-size: 11pt;
     font-weight: normal;
     color: gray;
+}
+
+div#menu li.procedure::marker {
+    font-size: 12pt;
+    font-weight: bold;
 }
 
 div#menu a {
@@ -136,21 +141,21 @@ div#menu a {
 }
 
 div#menu li.topic > a {
-    font-size: large;
+    font-size: 14pt;
 }
 
 div#menu li.part > span {
-    font-size: medium;
+    font-size: 12pt;
     font-weight: bold;
     color: darkred;
 }
 
 div#menu li.procedure > a {
-    font-size: medium;
+    font-size: 12pt;
 }
 
 div#menu li.column > a {
-    font-size: small;
+    font-size: 11pt;
     font-weight: normal;
     color: dimgray;
 }

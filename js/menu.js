@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // 「戻る」ボタンを押したとき
-    $(".button_back").on("click", function () {
+    $("button.back").on("click", function () {
         history.back();
     });
 

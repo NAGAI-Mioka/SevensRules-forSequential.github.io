@@ -123,7 +123,7 @@ div#menu li.column::marker {
 
 div#menu a {
     font-weight: bold;
-    transition: 300ms;
+    transition: 200ms;
 }
 
 div#menu li.topic > a {
@@ -178,4 +178,28 @@ h1 {
 
 p {
     font-size: 3vmin;
+}
+
+h1#title {
+    display: inline-block;
+    font-size: x-large;
+    line-height: 73px;
+    width: auto;
+}
+
+button.back {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px 30px;
+    border: 3px solid rgb(40, 40, 40);
+    border-radius: 100vh;
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+    transition: 200ms;
+}
+
+button.back:hover {
+    color: white;
+    background-color: rgb(40, 40, 40);
 }

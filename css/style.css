@@ -135,13 +135,15 @@ div#menu a {
     display: inline-block;
     width: auto;
     height: 100%;
+    padding: 0 2pt;
     font-weight: bold;
     color: rgb(40, 40, 40);
     transition: 200ms;
     transition-property: opacity;
 }
 
-div#menu a.now_open {
+div#menu a.now_open,
+div#menu li.column > a.now_open {
     pointer-events: none;
     text-decoration: none;
     color: white;
@@ -198,7 +200,7 @@ h1.visited {
 
 /*要素の単なるデザイン*/
 h1 {
-    margin-block-start: 0;
+    margin-block-start: 0.2em;
     line-height: 10vmin;
     font-size: 8vmin;
 }

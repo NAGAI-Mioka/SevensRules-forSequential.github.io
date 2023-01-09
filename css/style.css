@@ -61,7 +61,6 @@ div#content {
 iframe#viewer {
     width: 100%;
     height: 100%;
-    border: 1px solid salmon;
 }
 
 body#content {
@@ -74,41 +73,57 @@ body#content {
 div#menu * {
     margin: 0;
     padding: 0;
+    vertical-align: baseline;
 }
 
 div#menu ul {
     padding-left: 1em;
-    
 }
 
 div#menu > ul {
-    padding-left: 2em;
+    padding-left: 1.5em;
 }
 
 div#menu li.topic {
-    line-height: 3em;
+    padding-top: 1em;
     list-style-type: none;
 }
 
 div#menu li.part {
-    line-height: 2em;
-    list-style-type: upper-roman;
+    padding-top: 0.5em;
+    font-weight: bold;
+    text-decoration: underline double rgb(40, 40, 40);
+    list-style-type: none;
 }
 
 div#menu li.procedure {
-    line-height: 3em;
+    padding-top: 0.5em;
     list-style-type: decimal;
 }
 
 div#menu li.column {
-    line-height: 1.5em;
+    padding-top: 0;
     list-style-type: "- ";
 }
 
 div#menu a {
-    line-height: 2em;
     font-weight: bold;
     text-decoration: none;
+    transition: 200ms;
+}
+
+div#menu li.topic > a {
+    font-size: large;
+}
+
+div#menu li.column > a {
+    font-size: small;
+    font-weight: normal;
+    color: gray;
+}
+
+div#menu a:hover {
+    text-decoration: underline;
 }
 
 /*要素の単なるデザイン*/

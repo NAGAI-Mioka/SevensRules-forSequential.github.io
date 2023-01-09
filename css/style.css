@@ -92,18 +92,24 @@ div#menu li.topic {
 div#menu li.part {
     padding-top: 0.5em;
     font-weight: bold;
-    text-decoration: underline double rgb(40, 40, 40);
     list-style-type: none;
 }
 
 div#menu li.procedure {
     padding-top: 0.5em;
+    text-decoration: none;
     list-style-type: decimal;
 }
 
 div#menu li.column {
     padding-top: 0;
     list-style-type: "- ";
+}
+
+div#menu li.column::marker {
+    font-size: small;
+    font-weight: normal;
+    color: gray;
 }
 
 div#menu a {

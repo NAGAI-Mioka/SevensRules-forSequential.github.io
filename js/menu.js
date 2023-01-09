@@ -7,7 +7,7 @@ $(window).on("load", function () {
         //const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie
         const content = ck.split('=');
         console.log(content[0]);
-        Cookies.remove(content[0]);
+        Cookies.set(content[0], "false");
         //document.cookie = cookie + '; max-age=0';
     }
 });

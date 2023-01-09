@@ -3,7 +3,7 @@
 // 描画されたとき
 $(window).on("load", function () {
     console.log("load!");
-    if (Cookies.get("visited-" + window.location.pathname) != null) {
+    if (Cookies.get("visited-" + window.location.pathname) === "true") {
         console.log("visit!");
         $("body, h1").removeClass("unvisited").addClass("visited");
     } else {

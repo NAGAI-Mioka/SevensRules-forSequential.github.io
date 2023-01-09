@@ -88,6 +88,7 @@ div#menu ul {
 }
 
 div#menu > ul {
+    margin: 8px 0 300px;
     padding-left: 16px;
 }
 
@@ -102,10 +103,6 @@ div#menu li {
 div#menu li.topic {
     padding: 8px 0;
     list-style-type: none;
-}
-
-div#menu li.topic:first-child {
-    padding-top: 16px;
 }
 
 div#menu li.part {
@@ -135,6 +132,9 @@ div#menu li.procedure::marker {
 }
 
 div#menu a {
+    display: inline-block;
+    width: auto;
+    height: 100%;
     font-weight: bold;
     color: rgb(40, 40, 40);
     transition: 200ms;
@@ -144,7 +144,8 @@ div#menu a {
 div#menu a.now_open {
     pointer-events: none;
     text-decoration: none;
-    background: linear-gradient(transparent 65%, rgba(240, 128, 128, 0.4) 0%);
+    color: white;
+    background: lightcoral;
 }
 
 div#menu li.topic > a {

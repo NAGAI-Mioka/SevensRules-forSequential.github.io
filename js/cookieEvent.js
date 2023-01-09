@@ -14,9 +14,11 @@ $(window).on("load", function () {
 
 // iframe_mainの表示から外れたとき
 $(window).on("unload", function () {
-    if (Cookies.get("visited-" + window.location.pathname) == null) {
-        console.log("unload!");
-        Cookies.set("visited-" + window.location.pathname, "true");
+    if (window.parent === window.top) {
+        if (Cookies.get("visited-" + window.location.pathname) == null) {
+            console.log("unload!");
+            Cookies.set("visited-" + window.location.pathname, "true");
+        }
     }
 });
 

@@ -28,6 +28,7 @@ div#full_contaner > div {
 div#header {
     height: 75px;
     flex-shrink: 0;
+    border-bottom: 2px solid white;
 }
 
 div#body {
@@ -44,6 +45,7 @@ div#sideBar {
     width: 15em;
     height: 100%;
     flex-shrink: 0;
+    border-right: 2pt solid darkred;
 }
 
 div#menu {
@@ -116,36 +118,30 @@ div#menu li.column::marker {
 
 div#menu a {
     font-weight: bold;
-    transition: 200ms;
+    transition: 300ms;
 }
 
 div#menu li.topic > a {
-    font-size: large;
+    font-size: larger;
 }
 
 div#menu li.part > span {
     font-size: medium;
     font-weight: bold;
     color: darkred;
-    text-decoration: 1px double rgb(40, 40, 40);
 }
 
 div#menu li.column > a {
     font-size: small;
     font-weight: normal;
-    color: gray;
+    color: dimgray;
 }
 
 div#menu a:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 /*要素の単なるデザイン*/
-div {
-    /*デバッグ用*/
-    border: 1px solid black;
-}
-
 h1 {
     line-height: 10vmin;
     font-size: 8vmin;

@@ -84,6 +84,10 @@ div#menu > ul {
     padding-left: 1.5em;
 }
 
+div#menu ul.part {
+    padding-left: 0;
+}
+
 div#menu li.topic {
     padding-top: 1em;
     list-style-type: none;
@@ -92,17 +96,19 @@ div#menu li.topic {
 div#menu li.part {
     padding-top: 0.5em;
     font-weight: bold;
+    text-decoration: 1px double rgb(40, 40, 40);
     list-style-type: none;
 }
 
 div#menu li.procedure {
     padding-top: 0.5em;
-    text-decoration: none;
+    text-decoration: initial;
     list-style-type: decimal;
 }
 
 div#menu li.column {
     padding-top: 0;
+    text-decoration: initial;
     list-style-type: "- ";
 }
 

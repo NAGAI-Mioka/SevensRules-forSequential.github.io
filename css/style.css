@@ -354,6 +354,11 @@ ul li {
     border: none;
 }
 
+a.warp {
+    font-weight: bold;
+    color: dimgray;
+}
+
 h1#title {
     display: inline-block;
     margin: 0;

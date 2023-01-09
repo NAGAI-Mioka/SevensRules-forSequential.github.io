@@ -82,8 +82,15 @@ div#menu > ul {
 
 div#menu li {
     width: 100%;
-    list-style-type: none;
     display: block;
+}
+
+div#menu ol > li {
+    list-style-type: decimal;
+}
+
+div#menu ul > li {
+    list-style-type: "-";
 }
 
 div#menu a {

@@ -399,9 +399,13 @@ div.imgfig {
 
 div.imgfig img {
   max-width: 100%;
-  width: auto;
+  width: 300px;
   max-height: 100%;
   height: auto;
+}
+
+div.imgfig img.fourthree {
+  width: 400px;
 }
 
 figure {

@@ -17,7 +17,7 @@ $(document).ready(function () {
     // 現在iframe.viewerで開いているページのメニュー項目を色変え
     $(viewer).on("load", function () {
         $("#menu a").each(function (i, elem) {
-            if ($(elem).attr("href") === viewer.contentWindow.location.href) {
+            if ($(elem).attr("href") === viewer.contentWindow.location.pathname) {
                 $(elem).addClass("now_open");
             } else {
                 $(elem).removeClass("now_open");
